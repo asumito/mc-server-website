@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SYBAU Resource Hub</title>
+        <style>
+            :root {
+                --mc-green: #55ff55;
+                --mc-dark: #1e1e1e;
+                --mc-grey: #313131;
+                --mc-border: #000000;
+                --mc-button: #5dae44;
+            }
+
+            body {
+                background-color: var(--mc-dark);
+                color: #e0e0e0;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding-bottom: 50px;
+            }
+
+            /* Header & Navigation */
+            header {
+                background: #4a4a4a;
+                border-bottom: 4px solid var(--mc-border);
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: inset 0 -4px 0 #222;
+            }
+
+            .info-btn {
+                background: #4e4e4e;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border: 3px solid var(--mc-border);
+                box-shadow: inset -3px -3px 0 #222;
+                font-weight: bold;
+            }
+
+            .info-btn:hover {
+                background: #666;
+            }
+
+            .container {
+                display: flex;
+                max-width: 1200px;
+                margin: 30px auto;
+                gap: 30px;
+                padding: 0 20px;
+            }
+
+            /* Pack Grid */
+            .pack-list {
+                flex: 3;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            .pack-card {
+                background: var(--mc-grey);
+                border: 4px solid var(--mc-border);
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+            }
+
+            .pack-card h3 {
+                font-size: 1rem;
+                margin: 0 0 10px 0;
+                color: var(--mc-green);
+                word-break: break-all;
+            }
+
+            .file-info {
+                font-size: 0.75rem;
+                color: #aaa;
+                margin-bottom: 15px;
+            }
+
+            .download-btn {
+                text-align: center;
+                padding: 12px;
+                background: var(--mc-button);
+                color: white;
+                text-decoration: none;
+                border: 3px solid var(--mc-border);
+                box-shadow: inset -3px -3px 0 #3a6d2a;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            .download-btn:active {
+                box-shadow: inset 3px 3px 0 #3a6d2a;
+            }
+
+            /* Sidebar Box */
+            .sidebar {
+                flex: 1;
+                position: sticky;
+                top: 100px;
+                height: fit-content;
+                background: #2a2a2a;
+                border: 4px solid #000;
+                padding: 15px;
+            }
+
+            .sidebar textarea {
+                width: 100%;
+                height: 200px;
+                background: #111;
+                color: #fff;
+                border: 2px solid #555;
+                padding: 10px;
+                box-sizing: border-box;
+                font-family: monospace;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 1.5rem;
+                text-shadow: 2px 2px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>RESOURCE PACKS</h1>
+            <a href="info.html" class="info-btn">INFO PAGE</a>
+        </header>
+
+        <div class="container">
+            <main class="pack-list">
+                <div class="pack-card">
+                    <h3>animated-items 1.21.x - v1.5.5.zip</h3>
+                    <div class="file-info">Size: 1,609 KB</div>
+                    <a
+                        href="/assets/packs/animated-items 1.21.x - v1.5.5.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>Bare Bones 1.21.11.zip</h3>
+                    <div class="file-info">Size: 5,361 KB</div>
+                    <a
+                        href="/assets/packs/Bare Bones 1.21.11.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>Dramatic Skys Demo 1.5.3.36.2.zip</h3>
+                    <div class="file-info">Size: 13,587 KB</div>
+                    <a
+                        href="/assets/packs/Dramatic Skys Demo 1.5.3.36.2.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>Enchantment Outlines.zip</h3>
+                    <div class="file-info">Size: 1,446 KB</div>
+                    <a
+                        href="/assets/packs/Enchantment Outlines.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>FreshAnimations_v1.10.4.zip</h3>
+                    <div class="file-info">Size: 831 KB</div>
+                    <a
+                        href="/assets/packs/FreshAnimations_v1.10.4.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>Icons v1.13.2.zip</h3>
+                    <div class="file-info">Size: 8,413 KB</div>
+                    <a
+                        href="/assets/packs/Icons v1.13.2.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>MandalasGUI+Dakmode_1.21.6_v2.1.zip</h3>
+                    <div class="file-info">Size: 0 KB</div>
+                    <a
+                        href="/assets/packs/MandalasGUI+Dakmode_1.21.6_v2.1.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>NewGlowingOres-§6[Border]§r.zip</h3>
+                    <div class="file-info">Size: 0 KB</div>
+                    <a
+                        href="/assets/packs/NewGlowingOres-§6[Border]§r.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+
+                <div class="pack-card">
+                    <h3>VanillaTweaks.zip</h3>
+                    <div class="file-info">Size: 0 KB</div>
+                    <a
+                        href="/assets/packs/VanillaTweaks.zip"
+                        class="download-btn"
+                        >DOWNLOAD</a
+                    >
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h3 style="margin-top: 0; color: var(--mc-green)">
+                    Quick Notes
+                </h3>
+                <textarea placeholder="Site still being worked on."></textarea>
+            </aside>
+        </div>
+    </body>
+</html>
